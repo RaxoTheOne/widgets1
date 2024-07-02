@@ -81,7 +81,10 @@ class TextBox extends StatelessWidget {
       child: const Text(
         "Das ist ein Screen mit Body",
         style: TextStyle(
-            color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'PermanentMarker'),
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'PermanentMarker'),
       ),
     );
   }
