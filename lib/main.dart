@@ -10,6 +10,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: FABScreen(),
     );
   }
@@ -60,7 +61,7 @@ class BodyScreen extends StatelessWidget {
           color: Colors.orange,
         ),
       ),
-      body: Center(
+      body: const Center(
         child: TextBox(),
       ),
     );
@@ -77,10 +78,10 @@ class TextBox extends StatelessWidget {
       margin: const EdgeInsets.all(18.0),
       decoration: BoxDecoration(
           color: Colors.orange, borderRadius: BorderRadius.circular(12.0)),
-      child: Text(
+      child: const Text(
         "Das ist ein Screen mit Body",
         style: TextStyle(
-            color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+            color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'PermanentMarker'),
       ),
     );
   }
@@ -101,7 +102,7 @@ class FABScreen extends StatelessWidget {
           color: Colors.orange,
         ),
       ),
-      body: Center(
+      body: const Center(
         child: TextBox(),
       ),
       floatingActionButton: FloatingActionButton(
